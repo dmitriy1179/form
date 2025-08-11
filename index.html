@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form action="javascript">
+    <div class="field">
+      <label for="fname" class="field__name">Ім'я</label>
+      <input type="text" name="fname" id="fname">
+    </div>
+
+    <div class="field">
+      <label for="lname" class="field__name">Прізвище</label>
+      <input type="text" name="lname" id="lname">
+    </div>
+
+    <div class="field">
+      <label for="email" class="field__name">Електронна адреса</label>
+      <input type="email" name="email" id="email">
+    </div>
+
+    <div class="field">
+      <label for="password" class="field__name">Пароль</label>
+      <input type="password" name="password" id="password">
+    </div>
+
+    <div class="field">
+      <label for="else_password" class="field__name">Пароль ще раз</label>
+      <input type="else_password" name="else_password" id="else_password">
+    </div>
+
+    <div class="field">
+      <div class="field__name">Стать</div>
+      <div>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="male">чоловіча</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">жіноча</label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="age" class="field__name">Вік</label>
+      <input type="text" name="age" id="age" size="5">
+    </div>
+
+    <div class="field">
+      <label for="course" class="field__name">Курс</label>
+      <select name="course" id="course">
+        <option value="" selected disabled>-=Оберіть курс=-</option>
+        <option value="fe">Front-End</option>
+        <option value="be">Back-End</option>
+        <option value="pm">Project Management</option>
+        <option value="qa">QA Manual</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="address" class="field__name">Повна адреса</label>
+      <textarea name="address" id="address" rows="3" placeholder="Країна, регіон, мфсто/селище, вулиця"></textarea>
+    </div>
+
+    <div class="field">
+      <input type="checkbox" name="personal" id="personal">
+      <label for="personal">Я погоджуюсь з обробкою персональних даних</label>
+    </div>
+
+    <div class="buttons">
+      <button type="reset">Очистити форму</button>
+      <button type="submit">Зареєструватися</button>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  padding-block: 45px 45px;
+  max-width: 100%;
+  font-size: 18px;
+}
+
+option,
+select,
+textarea,
+button,
+input {
+  font-size: 18px;
+}
+
+form {
+  margin: auto;
+  width: 500px;
+  padding: 25px;
+  background-color: rgb(228, 227, 227);
+
+  .field {
+    display: flex;
+    width: 100%;
+    padding-block: 5px;
+
+    .field__name {
+      width: 50%;
+    }
+  }
+
+  :nth-child(10) {
+    display: flex;
+    align-items: center;
+    label {
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    margin: 10px auto;
+  }
+}
